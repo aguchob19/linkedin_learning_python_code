@@ -21,8 +21,12 @@ def main():
 
     # Open the file back up and read the contents
     if f.mode == 'r':
-        contents = f.read()
-        print(contents)
+        # contents = f.read()
+        # read as an array
+        fl = f.readlines()
+        for x in fl:
+            print(x)
+        # print(contents)
 
 if __name__ == "__main__":
     main()
